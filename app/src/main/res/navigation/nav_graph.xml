@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.villagermockup3.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Place Detail Fragment -->
+    <fragment
+        android:id="@+id/placeDetailFragment"
+        android:name="com.example.villagermockup3.place.PlaceDetailFragment"
+        android:label="Place Detail"
+        tools:layout="@layout/fragment_place_detail">
+
+        <action
+            android:id="@+id/action_placeDetailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- Booking Fragment (ใหม่) -->
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.villagermockup3.booking.BookingFragment"
+        android:label="Booking"
+        tools:layout="@layout/fragment_booking" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.villagermockup3.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- Payment Activity -->
+    <activity
+        android:id="@+id/paymentActivity"
+        android:name="com.example.villagermockup3.payment.PaymentActivity"
+        android:label="Payment"
+        tools:layout="@layout/activity_payment" />
+
+</navigation>

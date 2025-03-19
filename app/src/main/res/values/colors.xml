@@ -1,0 +1,69 @@
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="dark_gray">#595959</color>
+    <color name="darker_gray">#495057</color>
+
+    <!-- สีเพิ่มเติม -->
+    <color name="light">#F8F9FA</color> <!-- สีพื้นหลังแบบสว่าง -->
+    <color name="dark">#343A40</color> <!-- สีพื้นหลังแบบเข้ม -->
+    <!-- สีหลัก -->
+    <color name="primary">#007BFF</color> <!-- สีหลัก -->
+    <color name="primary_dark">#0056b3</color> <!-- สีหลักเข้ม -->
+    <color name="primary_light">#66B2FF</color> <!-- สีหลักอ่อน -->
+
+    <!-- สีรอง -->
+    <color name="secondary">#6C757D</color>
+    <color name="secondary_dark">#545B62</color>
+    <color name="secondary_light">#A6ACB1</color>
+
+    <!-- สีแสดงสถานะ -->
+    <color name="success">#28A745</color> <!-- สีแสดงความสำเร็จ -->
+    <color name="success_dark">#1E7E34</color>
+    <color name="success_light">#71D88A</color>
+
+    <color name="danger">#DC3545</color> <!-- สีแสดงข้อผิดพลาด -->
+    <color name="danger_dark">#A71D2A</color>
+    <color name="danger_light">#E57373</color>
+
+    <color name="warning">#FFC107</color> <!-- สีแจ้งเตือน -->
+    <color name="warning_dark">#D39E00</color>
+    <color name="warning_light">#FFDA6A</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <color name="info">#17A2B8</color> <!-- สีแสดงข้อมูล -->
+    <color name="info_dark">#117A8B</color>
+    <color name="info_light">#5AC0DE</color>
+
+    <!-- สีพื้นหลัง -->
+    <color name="background">#F8F9FA</color> <!-- สีพื้นหลังหลัก -->
+    <color name="background_dark">#E9ECEF</color> <!-- สีพื้นหลังแบบเข้ม -->
+
+    <!-- สีข้อความ -->
+    <color name="text_primary">#212529</color> <!-- สีข้อความหลัก -->
+    <color name="text_secondary">#6C757D</color> <!-- สีข้อความรอง -->
+    <color name="text_light">#ADB5BD</color> <!-- สีข้อความจาง -->
+    <color name="red">#D32F2F</color>
+
+
+    <!-- สีขอบและเงา -->
+    <color name="border">#DEE2E6</color>
+    <color name="shadow">#CED4DA</color>
+
+    <!-- สีสำหรับปุ่ม -->
+    <color name="button_primary">#007BFF</color>
+    <color name="button_secondary">#6C757D</color>
+    <color name="blue">#2196F3</color>
+    <color name="button_disabled">#ADB5BD</color>
+
+    <color name="purple">#6F42C1</color>
+    <color name="teal">#20C997</color>
+    <color name="orange">#FD7E14</color>
+
+</resources>
