@@ -1,5 +1,6 @@
 package com.example.villagermockup3.booking
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,8 @@ class BookingAdapter(private val bookingList: List<BookingItem>) :
         fun bind(item: BookingItem) {
             binding.tvPlaceName.text = item.placeName
             binding.tvTimeRange.text = item.timeRange
+
+            Log.d("BookingDebug", "Binding item: ${item.placeName}, ${item.timeRange}") // ✅ ตรวจสอบค่าที่แสดงใน UI
         }
     }
 
@@ -28,3 +31,4 @@ class BookingAdapter(private val bookingList: List<BookingItem>) :
 
     override fun getItemCount(): Int = bookingList.size
 }
+

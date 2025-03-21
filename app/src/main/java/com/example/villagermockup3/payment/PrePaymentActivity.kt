@@ -7,6 +7,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.villagermockup3.MainActivity
@@ -144,14 +145,19 @@ class PrePaymentActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun saveBookingData(placeName: String, date: String, startTime: String, endTime: String, price: Int) {
+    private fun saveBookingData(placeName: String, date: String, startTime: String, endTime: String, totalPrice: Int) {
+        val sharedPreferences = getSharedPreferences("BookingHistory", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
-        val bookingSet = sharedPreferences.getStringSet("bookings", mutableSetOf()) ?: mutableSetOf()
 
-        val bookingData = "$placeName|$date|$startTime|$endTime|$price"
-        bookingSet.add(bookingData)
+        val bookingData = "$placeName|$date|$startTime - $endTime"
 
-        editor.putStringSet("bookings", bookingSet)
+        val existingBookings = sharedPreferences.getStringSet("bookings", mutableSetOf()) ?: mutableSetOf()
+        existingBookings.add(bookingData)
+
+        editor.putStringSet("bookings", existingBookings)
         editor.apply()
+
+        Log.d("BookingDebug", "Saved booking: $bookingData") // ✅ ตรวจสอบค่าที่ถูกบันทึก
     }
+
 }
